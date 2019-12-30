@@ -1,4 +1,4 @@
-package VideoJuego;
+package Principal;
 
 public class Principal {
 
