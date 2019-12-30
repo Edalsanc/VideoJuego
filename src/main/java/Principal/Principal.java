@@ -6,6 +6,8 @@ public class Principal {
         Combate c1 = new Combate();
         Combate c2 = new Combate();
         Combate c3 = new Combate();
+        Combate c4 = new Combate();
+
 
          Camion cam =new Camion(1,2,3,4);
         Jeep je = new Jeep(1,2,3,4);
@@ -22,6 +24,8 @@ public class Principal {
          System.out.println(c2.toString());
          c3.ataquePersonalizado(cru,mot,speed);
          System.out.println(c3.toString());
+         c4.ataqueAmetralladoraBomba(cam,bom,je,mot,por);
+         System.out.println(c4);
 
     }
 }

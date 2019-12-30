@@ -51,6 +51,17 @@ public class Combate {
 
     }
 
+    public void ataqueAmetralladoraBomba(Camion cam,Bombardero bom,Jeep je,Motocicleta mot,Portavion por){
+        cam.bomba();
+        cam.ametralladora();
+        bom.bomba();
+        je.bomba();
+        je.ametralladora();
+        mot.ametralladora();
+        por.bomba();
+
+    }
+
     @Override
     public String toString() {
         return
