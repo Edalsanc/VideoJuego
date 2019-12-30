@@ -13,8 +13,7 @@ public class Vehiculo {
         this.cantidadMunicion2 = cantidadMunicion2;
     }
 
-    public Vehiculo() {
-    }
+
 
     public int getCapacidadCarga() {
         return capacidadCarga;
@@ -24,11 +23,16 @@ public class Vehiculo {
         return capacidadPersonas;
     }
 
-    public int getCantidadMunicion1() {
+   /* public int getCantidadMunicion1() {
         return cantidadMunicion1;
     }
 
-    public int getCantidadMunicion2() {
+    */
+/*    public int getCantidadMunicion2() {
         return cantidadMunicion2;
     }
+
+ */
 }
+
+

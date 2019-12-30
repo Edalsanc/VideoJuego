@@ -4,9 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
-public class CargarTest {
+public class CargaTest {
     private Bombardero bom;
     private Camion cam;
     private Crucero cru;
@@ -15,9 +13,7 @@ public class CargarTest {
     private Portavion por;
     private SpeedFighter speed;
     private Tanque tan;
-    private Cargar c;
-
-
+    private Carga c;
 
 
     @Before
@@ -30,7 +26,7 @@ public class CargarTest {
     por = new Portavion(3,2,3,4);
     speed = new SpeedFighter(3,2,3,4);
     tan = new Tanque(3,2,3,4);
-    c = new Cargar();
+    c = new Carga();
     }
 
     @Test

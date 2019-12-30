@@ -2,7 +2,7 @@ package VideoJuego;
 
 import java.util.Vector;
 
-public class Cargar {
+public class Carga {
 
     Vector<Vehiculo> elegir;
 
@@ -15,7 +15,7 @@ public class Cargar {
     private SpeedFighter speed;
     private Tanque tan;
 
-    public Cargar(Vector<Vehiculo> elegir, Bombardero bom, Camion cam, Crucero cru, Jeep je, Motocicleta mot, Portavion por, SpeedFighter speed, Tanque tan) {
+    public Carga(Vector<Vehiculo> elegir, Bombardero bom, Camion cam, Crucero cru, Jeep je, Motocicleta mot, Portavion por, SpeedFighter speed, Tanque tan) {
         this.elegir = new Vector<Vehiculo>();
         this.bom = bom;
         this.cam = cam;
@@ -28,13 +28,12 @@ public class Cargar {
 
     }
 
-    public Cargar() {
+    public Carga() {
     }
 
     public void asignarVehiculo(Bombardero bombardero) {
 
         elegir.add(bombardero);
-
 
     }
 
