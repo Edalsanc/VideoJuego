@@ -9,7 +9,7 @@ public class Tanque extends Vehiculo implements Ataque1,Ataque3 {
     }
 
     public void bomba() {
-
+        System.out.println("Se esta lanzando bomba tipo Tanque Sherman M4");
     }
 
     public void misil() {

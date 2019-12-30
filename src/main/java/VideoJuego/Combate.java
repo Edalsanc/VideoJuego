@@ -34,12 +34,20 @@ public class Combate {
 
     }
 
-    public void ataqueBombarderos(Bombardero bom,Camion cam,Jeep je,Portavion por){
+    public void ataqueBombarderos(Bombardero bom,Camion cam,Jeep je,Portavion por,Tanque tan){
         bom.bomba();
         cam.bomba();
         je.bomba();
         por.bomba();
+        tan.bomba();
 
+
+    }
+
+    public void ataquePersonalizado(Crucero cru,Motocicleta mot,SpeedFighter speed){
+        cru.laser();
+        mot.laser();
+        speed.laser();
 
     }
 
