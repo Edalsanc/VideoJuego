@@ -88,4 +88,12 @@ public class Cargar {
         return total;
 
     }
+
+    public int totalCargaCombinado(Bombardero bom,Camion cam,Crucero cru,Jeep je,Motocicleta mot,Portavion por,SpeedFighter speed,Tanque tan) {
+        int total = 0;
+
+        total = bom.getCapacidadCarga()+cam.getCapacidadCarga()+cru.getCapacidadCarga()+je.getCapacidadCarga()+mot.getCapacidadCarga()+por.getCapacidadCarga()+speed.getCapacidadCarga()+tan.getCapacidadCarga();
+
+        return total;
+    }
 }

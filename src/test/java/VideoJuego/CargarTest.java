@@ -22,14 +22,14 @@ public class CargarTest {
 
     @Before
     public void setUp() throws Exception {
-    bom = new Bombardero (38,2,3,4);
-    cam = new Camion(1,2,3,4);
-    cru = new Crucero(1,2,3,4);
-    je = new Jeep(1,2,3,4);
-    mot = new Motocicleta(1,2,3,4);
-    por = new Portavion(1,2,3,4);
-    speed = new SpeedFighter(1,2,3,4);
-    tan = new Tanque(1,2,3,4);
+    bom = new Bombardero (3,2,3,4);
+    cam = new Camion(3,2,3,4);
+    cru = new Crucero(3,2,3,4);
+    je = new Jeep(3,2,3,4);
+    mot = new Motocicleta(3,2,3,4);
+    por = new Portavion(3,2,3,4);
+    speed = new SpeedFighter(3,2,3,4);
+    tan = new Tanque(3,2,3,4);
     c = new Cargar();
     }
 
@@ -76,5 +76,10 @@ public class CargarTest {
     @Test
     public void totalPersonasCombinado() {
         Assert.assertEquals("no es correcto",16,c.totalPersonasCombinado(bom,cam,cru,je,mot,por,speed,tan));
+    }
+
+    @Test
+    public void totalCargaCombinado() {
+        Assert.assertEquals("no es correcto",24,c.totalCargaCombinado(bom,cam,cru,je,mot,por,speed,tan));
     }
 }
