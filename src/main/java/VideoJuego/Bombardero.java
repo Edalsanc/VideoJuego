@@ -8,6 +8,7 @@ public class Bombardero extends Vehiculo implements Ataque1,Ataque3  {
     }
 
     public void bomba() {
+        System.out.println("Se esta lanzando bomba tipo Bombardero B56");
 
     }
 

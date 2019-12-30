@@ -8,6 +8,7 @@ public class Portavion extends Vehiculo implements Ataque1,Ataque3{
     }
 
     public void bomba() {
+        System.out.println("Se esta lanzando bomba tipo Porta Avion Bismarck");
 
     }
 

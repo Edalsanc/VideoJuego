@@ -3,16 +3,24 @@ package VideoJuego;
 public class Combate {
 
 
+    private Bombardero bom;
     private Camion cam;
+    private Crucero cru;
     private Jeep je;
     private Motocicleta mot;
+    private Portavion por;
     private SpeedFighter speed;
+    private Tanque tan;
 
-    public Combate(Camion cam, Jeep je, Motocicleta mot, SpeedFighter speed) {
+    public Combate(Bombardero bom, Camion cam, Crucero cru, Jeep je, Motocicleta mot, Portavion por, SpeedFighter speed, Tanque tan) {
+        this.bom = bom;
         this.cam = cam;
+        this.cru = cru;
         this.je = je;
         this.mot = mot;
+        this.por = por;
         this.speed = speed;
+        this.tan = tan;
     }
 
     public Combate() {
@@ -24,16 +32,27 @@ public class Combate {
         mot.ametralladora();
         speed.ametralladora();
 
+    }
+
+    public void ataqueBombarderos(Bombardero bom,Camion cam,Jeep je,Portavion por){
+        bom.bomba();
+        cam.bomba();
+        je.bomba();
+        por.bomba();
+
 
     }
 
     @Override
     public String toString() {
         return
-                "cam=" + cam +
+                "bom=" + bom +
+                ", cam=" + cam +
+                ", cru=" + cru +
                 ", je=" + je +
                 ", mot=" + mot +
-                ", speed=" + speed
-                ;
+                ", por=" + por +
+                ", speed=" + speed +
+                ", tan=" + tan ;
     }
 }

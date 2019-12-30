@@ -9,7 +9,7 @@ public class Jeep extends Vehiculo implements Ataque1,Ataque2 {
     }
 
     public void bomba() {
-
+        System.out.println("Se esta lanzando bomba tipo Jeep de reconocimiento");
     }
 
     public void ametralladora() {

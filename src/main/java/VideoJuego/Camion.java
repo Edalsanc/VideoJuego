@@ -8,10 +8,10 @@ public class Camion extends  Vehiculo implements Ataque1,Ataque2 {
     }
 
     public void bomba() {
-
+        System.out.println("Se esta lanzando bomba tipo Camion de suministro HI");
     }
 
     public void ametralladora() {
-        System.out.println("Disparando rafaga tipo camion");
+        System.out.println("Disparando rafaga tipo Camion de suministro HI");
     }
 }
