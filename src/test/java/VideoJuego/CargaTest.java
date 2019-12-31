@@ -71,11 +71,11 @@ public class CargaTest {
 
     @Test
     public void totalPersonasCombinado() {
-        Assert.assertEquals("no es correcto",16,c.totalPersonasCombinado(bom,cam,cru,je,mot,por,speed,tan));
+        Assert.assertEquals("no es correcto",16,c.totalPersonasCombinado());
     }
 
     @Test
     public void totalCargaCombinado() {
-        Assert.assertEquals("no es correcto",24,c.totalCargaCombinado(bom,cam,cru,je,mot,por,speed,tan));
+        Assert.assertEquals("no es correcto",24,c.totalCargaCombinado());
     }
 }

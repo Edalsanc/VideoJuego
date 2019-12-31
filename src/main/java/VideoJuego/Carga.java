@@ -31,6 +31,10 @@ public class Carga {
     public Carga() {
     }
 
+    public Vector<Vehiculo> getElegir() {
+        return elegir;
+    }
+
     public void asignarVehiculo(Bombardero bombardero) {
 
         elegir.add(bombardero);
@@ -79,19 +83,21 @@ public class Carga {
 
     }
 
-    public int totalPersonasCombinado(Bombardero bom,Camion cam,Crucero cru,Jeep je,Motocicleta mot,Portavion por,SpeedFighter speed,Tanque tan) {
+    public int totalPersonasCombinado() {
         int total = 0;
-
-        total = bom.getCapacidadPersonas() + cam.getCapacidadPersonas() + cru.getCapacidadPersonas() + je.getCapacidadPersonas() + mot.getCapacidadPersonas() + por.getCapacidadPersonas() + speed.getCapacidadPersonas() + tan.getCapacidadPersonas();
-
+        for(Vehiculo vehiculo:elegir){
+            total += vehiculo.getCapacidadPersonas();
+        }
         return total;
 
     }
 
-    public int totalCargaCombinado(Bombardero bom,Camion cam,Crucero cru,Jeep je,Motocicleta mot,Portavion por,SpeedFighter speed,Tanque tan) {
+    public int totalCargaCombinado() {
         int total = 0;
 
-        total = bom.getCapacidadCarga()+cam.getCapacidadCarga()+cru.getCapacidadCarga()+je.getCapacidadCarga()+mot.getCapacidadCarga()+por.getCapacidadCarga()+speed.getCapacidadCarga()+tan.getCapacidadCarga();
+        for(Vehiculo vehiculo:elegir){
+            total += vehiculo.getCapacidadCarga();
+        }
 
         return total;
     }

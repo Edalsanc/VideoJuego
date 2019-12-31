@@ -10,7 +10,7 @@ public class Principal {
 
 
          Camion cam =new Camion(1,2,3,4);
-        Jeep je = new Jeep(1,2,3,4);
+         Jeep je = new Jeep(1,2,3,4);
          Motocicleta mot = new Motocicleta(1,2,3,4);
          SpeedFighter speed = new SpeedFighter(1,2,3,4);
          Bombardero bom = new Bombardero(1,2,3,4);
